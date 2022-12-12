@@ -1,0 +1,21 @@
+*, *::after, *::before {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*  Colors */
+    --hue: 36;
+    --sat: 100%;
+
+        /* default light */
+    --accent: var(--hue) var(--sat) 50%;
+    --bkg: var(--hue) var(--sat) 49%;
+    --text: var(--hue) var(--sat) 4%;
+}
+
+body {
+    background-color: hsl(var(--bkg));
+}
