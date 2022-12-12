@@ -12,10 +12,23 @@
 
         /* default light */
     --accent: var(--hue) var(--sat) 50%;
-    --bkg: var(--hue) var(--sat) 49%;
+    --bkg: var(--hue) var(--sat) 99%;
     --text: var(--hue) var(--sat) 4%;
+        /* dark mode */
+    --accent--dark: var(--hue) var(--sat) 60%;
+    --bkg--dark: var(--hue) 20% 16%;
+    --text--dark: var(--hue) 15% 85% 4%;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --accent: var(--accent--dark);
+        --bkg: var(--bkg--dark);
+        --text: var(--text--dark);
+    }
 }
 
 body {
     background-color: hsl(var(--bkg));
+    color: hsl(var(--text));
 }
