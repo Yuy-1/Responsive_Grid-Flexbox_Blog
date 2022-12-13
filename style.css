@@ -146,8 +146,30 @@ header {
     color: hsl(var(--accent));
 }
 
+.social__text {
+    display: none;
+}
+
 article {
     grid-area: 3/2/4/-2;
+    margin: var(--spacer--md) 0;
+}
+
+article p {
+    margin-bottom: var(--spacer--sm);
+}
+
+.article__author {
+    border: 6px solid hsl(var(--text));
+    padding: var(--spacer--md);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacer--md)  ;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin-top: calc(var(--spacer--lg) - var(--spacer--sm));
 }
 
 .sidebar {
