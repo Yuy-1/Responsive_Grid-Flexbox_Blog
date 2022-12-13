@@ -82,4 +82,23 @@ small, .small {
 body {
     background-color: hsl(var(--bkg));
     color: hsl(var(--text));
+    font-family: 'Inter', sans-serif;
 }
+
+.container {
+    display: grid;
+    margin: var(--spacer--md) 0;
+    gap: var(--spacer--sm);
+    grid-template-columns: repeat(21, 1fr);
+    grid-template-rows: auto;
+}
+
+header {}
+
+
+
+
+
+
+
+
