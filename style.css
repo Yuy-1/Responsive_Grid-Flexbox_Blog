@@ -169,7 +169,21 @@ article p {
     align-items: center;
     justify-content: center;
     max-width: 900px;
-    margin-top: calc(var(--spacer--lg) - var(--spacer--sm));
+    margin-top: calc(var(--spacer--md) + var(--spacer--sm));
+}
+
+.article__author--details {
+    margin-bottom: 0;
+}
+
+.article__author--details .capitalized {
+    margin: .2rem 0 .8rem;
+}
+
+.article__author--image {
+    margin: auto;
+    width: clamp(100px, 56.923078px + 12.307692vw, 180px);
+    bottom: ;
 }
 
 .sidebar {
