@@ -220,7 +220,30 @@ article p {
     gap: .7rem;
 }
 
+@media only screen and (min-width: 600px) {
+    .sidebar__tags, .sidebar__related {
+        flex: 1 1 40%;
+    }
+}
 
+@media only screen and (min-width: 1000px) {
+    :root {
+        font-size: 18px;
+    }
+    .container {
+        grid-template-columns: repeat(15, 1fr);
+    }
+    .share__social {
+        margin-left: calc(100% / 15);
+    }
+    article {
+        grid-area: 3/2/4/10;
+    }
+    .sidebar {
+        grid-area: 3/11/4/-2;
+        margin: var(--spacer--md) 0;
+    }
+}
 
 
 
