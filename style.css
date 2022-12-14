@@ -183,11 +183,41 @@ article p {
 .article__author--image {
     margin: auto;
     width: clamp(100px, 56.923078px + 12.307692vw, 180px);
-    bottom: ;
+    bottom: clamp(6px, 3.8461525px + 0.615385vw, 10px) solid hsl(var(--accent));
+    border-radius: 50%;
 }
 
 .sidebar {
     grid-area: 4/2/5/-2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: var(--spacer--lg);
+}
+.sidebar__header {
+    border-bottom: 4px solid hsl(var(--text));
+    padding-bottom: .5rem;
+}
+
+.sidebar__tags, .sidebar__related {
+    display: grid;
+    gap: .8rem;
+}
+
+.related-post__container {
+    display: grid;
+    gap: .5rem;
+}
+
+.related-post {
+    color: hsl(var(--text));
+    text-decoration: none;
+}
+
+.tags__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .7rem;
 }
 
 
